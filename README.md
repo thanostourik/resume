@@ -1,4 +1,4 @@
-My personal Resume developed with ReactJS and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal Resume developed with ReactJS and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
 Styling done with [styled components](https://github.com/styled-components/styled-components).
 
 ## Available Scripts
