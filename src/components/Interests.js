@@ -1,0 +1,19 @@
+import React from 'react';
+import Vars from '../vars';
+import { Heading2, List, ListItem } from './General';
+import SidebarSection from './template/SidebarSection';
+
+const Interests = ({ interests }) => (
+    <SidebarSection>
+        <Heading2>{Vars.interests}</Heading2>
+        <List padding="0 0 0 20px">
+            {
+                interests.map((interest, index) => (
+                    <ListItem key={index}>{interest}</ListItem>
+                ))
+            }
+        </List>
+    </SidebarSection>
+);
+
+export default Interests;

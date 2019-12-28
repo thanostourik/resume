@@ -1,0 +1,117 @@
+{
+    "firstName": "Thanos",
+    "lastName": "Tourikas",
+    "jobTitle": "Full Stack Developer",
+    "profile": "Full stack web developer with 7+ years of working with Java and Spring and 2+ years developing single page applicatiosn with ReactJS.",
+    "info": {
+        "email": "thanos.tourik@gmail.com",
+        "phone": "+30 6972513864",
+        "address": "Athens, Greece"
+    },
+    "links": [
+        {"label": "LinkedIn", "link":"https://www.linkedin.com/in/thanos-tourikas-64650a62"},
+        {"label": "GitHub", "link": "https://github.com/thanostourik"}
+    ],
+    "skills": [
+        "Java, Scala",
+        "HTML5, CSS3, JavaScript",
+        "Spring ecosystem (Boot, IoC, Security, Data)",
+        "ReactJS",
+        "Hibernate",
+        "Wicket",
+        "PostgreSQL, ArangoDB",
+        "Tomcat, Nginx",
+        "Version control (Git, SVN)",
+        "Intellij, Eclipse",
+        "Linux (Mint/Ubuntu)"
+    ],
+    "languages": [
+        {
+            "language": "Greek",
+            "level": "Native"
+        },
+        {
+            "language": "English",
+            "level": "Proficiency of Michigan University (C2)"
+        }
+    ],
+    "interests": [
+        "Video games",
+        "Guitar",
+        "Discovering, researching and learning about new technologies"
+    ],
+    "employmentHistory": [
+        {
+            "jobTitle": "Full Stack Developer",
+            "employer": "Eworx", 
+            "start": "May 2017",
+            "end": "Present",
+            "location": "Athens",
+            "responsibilities": [
+                "Developing REST backends with Java and Spring Book",
+                "Creating single page applications with ReactJS",
+                "Lead developer in travel/tourist related project",
+                "Maintaining and developing new features in older products using various technologies",
+                "Coaching junior developers"
+            ]
+        },
+        {
+            "jobTitle": "Full Stack Developer",
+            "employer": "Avaca Technologies", 
+            "start": "Oct 2012",
+            "end": "Apr 2017",
+            "location": "Athens",
+            "responsibilities": [
+                "Developed and maintained web applications in Java, Scala, Wicket and Akka",
+                "Styled web applications with CSS3, JQuery and Foundation",
+                "Completed internship where got introduced and trained in Spring, Wicket and Hibernate",
+                "Developed features in a component based fashion for various project",
+                "Took on lead developer position in a car insurance project",
+                "Interacted with the client to understand project details and provide support",
+                "Trained junior developers"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Technological Educational Institute of Athens",
+            "degree": "Computer Science",
+            "location": "Athens",
+            "start": "Sep 2006",
+            "end": "Nov 2014",
+            "description": "<span>Bachelor Thesis:</span><ul><li>Research the Facebook API</li><li>Develop a Facebook application to showcase its API</li></ul>"
+        }
+    ],
+    "courses": [
+        {
+            "course": "Principles of Reactive Programming",
+            "institution": "École Polytechnique Fédérale de Lausanne (coursera.org)",
+            "start": "Apr 2015",
+            "end": "May 2015"
+        },
+        {
+            "course": "Functional Programming Principles in Scala",
+            "institution": "École Polytechnique Fédérale de Lausanne (coursera.org)",
+            "start": "Sep 2014",
+            "end": "Nov 2014"
+        },
+        {
+            "course": "Web Application Architectures",
+            "institution": "University of New Mexico (coursera.org)",
+            "start": "Aug 2014",
+            "end": "Sep 2014"
+        },
+        {
+            "course": "Cryptography I",
+            "institution": "Stanford University (coursera.org)",
+            "start": "Nov 2012",
+            "end": "Dec 2012"
+        },
+        {
+            "course": "Programming Mobile Applications for Android Handheld Systems: Part 1",
+            "institution": "University of Maryland (coursera.org)",
+            "start": "May 2015",
+            "end": "Jun 2015"
+        }
+    ]
+}
