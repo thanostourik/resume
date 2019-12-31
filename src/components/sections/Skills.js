@@ -1,7 +1,7 @@
 import React from 'react';
-import Vars from '../vars';
-import { Heading2, List, ListItem } from './General';
-import SidebarSection from './template/SidebarSection';
+import Vars from '../../utils/vars';
+import { Heading2, List, ListItem } from '../General';
+import SidebarSection from '../template/SidebarSection';
 
 const Skill = ({ skill }) => (
     <ListItem>{skill}</ListItem>

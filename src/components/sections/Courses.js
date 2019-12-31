@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Vars from '../vars';
-import { Heading2, Heading3 } from './General';
-import MainSection from './template/MainSection';
+import Vars from '../../utils/vars';
+import { Heading2, Heading3 } from '../General';
+import MainSection from '../template/MainSection';
 
 const CourseSd = styled.div`
     :not(:last-child) {

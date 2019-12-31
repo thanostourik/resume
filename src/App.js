@@ -1,22 +1,22 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Heading1 } from './components/General';
-import Resume from './components/Resume';
+import Resume from './components/template/Resume';
 import Header from './components/template/Header';
 import LeftColumn from './components/template/LeftColumn';
 import RightColumn from './components/template/RightColumn';
-import Info from './components/Info.js';
-import Links from './components/Links';
-import Skills from './components/Skills';
-import Languages from './components/Languages';
-import Interests from './components/Interests';
-import Profile from './components/Profile';
-import EmploymentHistory from './components/EmploymentHistory';
-import Educations from './components/Educations';
-import Courses from './components/Courses';
+import Info from './components/sections/Info.js';
+import Links from './components/sections/Links';
+import Skills from './components/sections/Skills';
+import Languages from './components/sections/Languages';
+import Interests from './components/sections/Interests';
+import Profile from './components/sections/Profile';
+import EmploymentHistory from './components/sections/EmploymentHistory';
+import Educations from './components/sections/Educations';
+import Courses from './components/sections/Courses';
 
 import theme from './theme';
-import data from './data.json';
+import data from './utils/data.json';
 
 const SubHeader = styled.span`
   color: ${props => props.theme.colors.content};

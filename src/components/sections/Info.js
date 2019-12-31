@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Vars from '../vars';
-import { Heading2, Heading4, Span } from './General';
-import SidebarSection from './template/SidebarSection';
+import Vars from '../../utils/vars';
+import { Heading2, Heading4, Span } from '../General';
+import SidebarSection from '../template/SidebarSection';
 
 const InfoItemSd = styled.div`
     :not(:last-child) {
