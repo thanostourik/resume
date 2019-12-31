@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, Heading4, Span } from '../General';
@@ -27,5 +28,11 @@ const Info = ({ address, phone, email }) => (
         </InfoItemSd>
     </SidebarSection>
 );
+
+Info.propTypes = {
+    address: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired
+};
 
 export default Info;

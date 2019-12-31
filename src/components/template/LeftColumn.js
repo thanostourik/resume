@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const LeftColumnSd = styled.div`
@@ -10,5 +11,8 @@ const LeftColumn = ({ children }) => (
         {children}
     </LeftColumnSd>
 );
+LeftColumn.propTypes = {
+    children: PropTypes.node
+};
 
 export default LeftColumn;

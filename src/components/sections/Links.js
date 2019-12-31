@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, List, ListItem } from '../General';
@@ -41,5 +42,13 @@ const Links = ({ links }) => (
         </List>
     </SidebarSection>
 );
+
+Link.propTypes = {
+    label: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
+};
+Links.propTypes = {
+    links: PropTypes.array.isRequired
+};
 
 export default Links;

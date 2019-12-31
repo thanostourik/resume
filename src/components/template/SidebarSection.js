@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SidebarSectionSd = styled.div`
@@ -14,5 +15,8 @@ const SidebarSection = ({ children }) => (
         {children}
     </SidebarSectionSd>
 );
+SidebarSection.propTypes = {
+    children: PropTypes.node
+};
 
 export default SidebarSection;

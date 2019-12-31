@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, List, ListItem } from '../General';
@@ -33,5 +34,9 @@ const Languages = ({ languages }) => (
         </List>
     </SidebarSection>
 );
+
+Languages.propTypes = {
+    languages: PropTypes.array.isRequired
+};
 
 export default Languages;

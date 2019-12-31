@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, Heading3 } from '../General';
@@ -39,5 +40,15 @@ const Courses = ({ courses }) => (
         }
     </MainSection>
 );
+
+Course.propTypes = {
+    course: PropTypes.string.isRequired,
+    institution: PropTypes.string.isRequired,
+    start: PropTypes.string,
+    end: PropTypes.string
+};
+Courses.propTypes = {
+    courses: PropTypes.array.isRequired
+};
 
 export default Courses;

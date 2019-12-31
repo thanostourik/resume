@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Vars from '../../utils/vars';
 import { Heading2, List, ListItem } from '../General';
 import SidebarSection from '../template/SidebarSection';
@@ -26,5 +27,12 @@ const Skills = ({ skills }) => (
         </List>
     </SidebarSection>
 );
+
+Skill.propTypes = {
+    skill: PropTypes.string.isRequired
+};
+Skills.propTypes = {
+    skills: PropTypes.array.isRequired
+};
 
 export default Skills;

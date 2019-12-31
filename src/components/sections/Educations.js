@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, Heading3, LocationIcon } from '../General';
@@ -52,6 +53,18 @@ const Educations = ({ education }) => (
             ))
         }
     </MainSection>
-)
+);
+
+Education.propTypes = {
+    institution: PropTypes.string.isRequired,
+    degree: PropTypes.string.isRequired,
+    start: PropTypes.string.isRequired,
+    end: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    description: PropTypes.string
+};
+Educations.propTypes = {
+    education: PropTypes.array.isRequired
+};
 
 export default Educations;

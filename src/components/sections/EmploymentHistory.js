@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, Heading3, List, ListItem, LocationIcon } from '../General';
@@ -28,13 +29,17 @@ const Employment = ({ jobTitle, employer, start, end, location, responsibilities
                 {start}&nbsp;-&nbsp;{end}
                 <LocationIcon/>{location}
             </SubTitleSd>
-            <List>
-                {
-                    responsibilities.map((resp, index) => (
-                        <ListItem key={index}>{resp}</ListItem>
-                    ))
-                }
-            </List>
+            {
+                responsibilities &&
+                <List>
+                    {
+                        
+                        responsibilities.map((resp, index) => (
+                            <ListItem key={index}>{resp}</ListItem>
+                        ))
+                    }
+                </List>
+            }
         </EmploymentSd>
     )
 };
@@ -52,5 +57,17 @@ const EmploymentHistory = ({ employmentHistory }) => (
         }
     </MainSection>
 );
+
+Employment.propTypes = {
+    jobTitle: PropTypes.string.isRequired,
+    employer: PropTypes.string.isRequired,
+    start: PropTypes.string.isRequired,
+    end: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    responsibilities: PropTypes.array
+};
+EmploymentHistory.propTypes = {
+    employmentHistory: PropTypes.array
+};
 
 export default EmploymentHistory;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, Span } from '../General';
@@ -14,5 +15,9 @@ const Profile = ({ profile }) => (
         <SpanSd>{profile}</SpanSd>
     </MainSection>
 );
+
+Profile.propTypes = {
+    profile: PropTypes.string.isRequired
+};
 
 export default Profile;
