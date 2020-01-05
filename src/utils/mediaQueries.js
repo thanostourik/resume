@@ -19,6 +19,4 @@ const mediaQueries =
 			return acc
 		}, {});
 
-console.log(mediaQueries)
-
 export default mediaQueries;
