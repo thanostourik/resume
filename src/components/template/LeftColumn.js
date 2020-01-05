@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import mediaQueries from '../../utils/mediaQueries';
 
 const LeftColumnSd = styled.div`
-    grid-area: left;
+    order: 3;
+    ${mediaQueries.desktop`
+        grid-area: left;
+    `}
 `;
 
 const LeftColumn = ({ children }) => (
