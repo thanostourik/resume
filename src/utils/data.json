@@ -10,7 +10,8 @@
     },
     "links": [
         {"label": "LinkedIn", "link":"https://www.linkedin.com/in/thanos-tourikas-64650a62"},
-        {"label": "GitHub", "link": "https://github.com/thanostourik"}
+        {"label": "GitHub", "link": "https://github.com/thanostourik"},
+        {"label": "thanostourikas.gr", "link": "https://thanostourikas.gr"}
     ],
     "skills": [
         "Java, Scala",
