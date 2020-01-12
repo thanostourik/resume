@@ -17,11 +17,12 @@
         "Java, Scala",
         "HTML5, CSS3, JavaScript",
         "Spring ecosystem (Boot, IoC, Security, Data)",
-        "ReactJS",
+        "ReactJS, Redux",
         "Hibernate",
         "Wicket",
         "PostgreSQL, ArangoDB",
         "Tomcat, Nginx",
+        "Maven, Npm, Webpack",
         "Version control (Git, SVN)",
         "Intellij, Eclipse",
         "Linux (Mint/Ubuntu)"
@@ -51,7 +52,7 @@
             "responsibilities": [
                 "Developing REST backends with Java and Spring Boot",
                 "Creating single page applications with ReactJS",
-                "Lead developer in travel/tourist related project",
+                "Lead developer in travel/experiences related project",
                 "Maintaining and developing new features in older products using various technologies",
                 "Coaching junior developers"
             ]
