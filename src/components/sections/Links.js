@@ -2,23 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from 'styled-components';
 import Vars from '../../utils/vars';
-import { Heading2, List, ListItem } from '../General';
+import { Heading2, List, ListItem, Link } from '../General';
 import SidebarSection from '../template/SidebarSection';
 
-const LinkSd = style.a`
-    text-decoration: none;
-    color: #B58E58;
-    :active {
-        color: #B58E58;
-    }
-    :hover {
-        color: #B58E58;
-    }
-`;
-
-const Link = ({ label, link }) => (
+const LinkItem = ({ label, link }) => (
     <ListItem>
-        <LinkSd target="_blank" href={link}>{label}</LinkSd>
+        <Link target="_blank" href={link}>{label}</Link>
     </ListItem>
 );
 
@@ -32,7 +21,7 @@ const Links = ({ links }) => (
         >
             {
                 links.map((link, index) => (
-                    <Link
+                    <LinkItem
                         key={index}
                         link={link.link}
                         label={link.label}
@@ -43,7 +32,7 @@ const Links = ({ links }) => (
     </SidebarSection>
 );
 
-Link.propTypes = {
+LinkItem.propTypes = {
     label: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired
 };

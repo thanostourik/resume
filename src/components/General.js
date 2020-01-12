@@ -33,11 +33,21 @@ export const Heading4 = styled.h4`
     -webkit-print-color-adjust: exact;
 `;
 
-
 export const Span = styled.span`
     color: ${props => props.theme.colors.content};
     font-size: ${props => props.theme.sizes.content};
     -webkit-print-color-adjust: exact;
+`;
+
+export const Link = styled.a`
+    color: ${props => props.color ?? props.theme.colors.link};
+    font-size: ${props => props.theme.sizes.content};
+    -webkit-print-color-adjust: exact;
+    text-decoration: none;
+    :hover,
+    :active {
+        color: ${props => props.color ?? props.theme.colors.link};
+    }
 `;
 
 export const List = styled.ul`
