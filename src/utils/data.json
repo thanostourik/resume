@@ -2,7 +2,7 @@
     "firstName": "Thanos",
     "lastName": "Tourikas",
     "jobTitle": "Full Stack Developer",
-    "profile": "Full stack web developer with 7+ years of working with Java and Spring and 2+ years developing single page applicatiosn with ReactJS.",
+    "profile": "Full stack web developer with 9+ years of working with Java and the Spring framework and 4+ years developing single page applications with ReactJS.",
     "info": {
         "email": "thanos.tourik@gmail.com",
         "phone": "+30 6972513864",
@@ -15,8 +15,8 @@
     ],
     "skills": [
         "Java, Scala",
-        "HTML5, CSS3, JavaScript",
         "Spring ecosystem (Boot, IoC, Security, Data)",
+        "HTML5, CSS3, JavaScript",
         "ReactJS, Redux",
         "Hibernate",
         "Wicket",
@@ -64,9 +64,9 @@
             "end": "Apr 2017",
             "location": "Athens",
             "responsibilities": [
+                "Completed internship where got introduced and trained in Spring, Wicket and Hibernate",
                 "Developed and maintained web applications in Java 7/8, Scala, Wicket and Akka",
                 "Styled web applications with CSS3, JQuery and Foundation",
-                "Completed internship where got introduced and trained in Spring, Wicket and Hibernate",
                 "Developed features in a component based fashion for various projects",
                 "Took on lead developer position in a car insurance project",
                 "Interacted with the client to understand project details and provide support",
