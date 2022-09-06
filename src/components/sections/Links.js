@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from 'styled-components';
 import Vars from '../../utils/vars';
 import { Heading2, List, ListItem, Link } from '../General';
 import SidebarSection from '../template/SidebarSection';

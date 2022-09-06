@@ -1,4 +1,4 @@
-export default {
+const vars = {
     profile: "Profile",
     info: "Info",
     links: "Links",
@@ -9,3 +9,4 @@ export default {
     education: "Education",
     courses: "Courses"
 };
+export default vars;
