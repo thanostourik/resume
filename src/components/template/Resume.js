@@ -10,22 +10,29 @@ const ResumeSd = styled.div`
     font-family: 'Lato', sans-serif;
 
     ${mediaQueries.desktop`
-        width: 900px;
+        width: 1024px;
         margin: 0 auto;
-        padding: 5rem 8rem;
+        padding: 3rem 0;
         display: grid;
         grid-gap: 6rem;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "header header"
                             "left right";
     `}
+
+    ${mediaQueries.print`
+        padding: 0;
+    `}
 `;
 
-const Resume = ({ children }) => (
-    <ResumeSd>
-        {children}
-    </ResumeSd>
-);
+const Resume = ({ children }) => {
+	console.log(mediaQueries)
+	return (
+		<ResumeSd>
+			{children}
+		</ResumeSd>
+	);
+}
 Resume.propTypes = {
     children: PropTypes.node
 };

@@ -9,6 +9,9 @@ const RightColumnSd = styled.div`
     ${mediaQueries.desktop`
         grid-area: right;
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: ${props => props.theme.spaces.screen.section};
     `}
 `;
 

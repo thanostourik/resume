@@ -11,6 +11,7 @@ const sizes = {
 const mediaQueries =
 	Object.keys(sizes)
 		.reduce((acc, label) => {
+			console.log(label)
 			acc[label] = (...args) => css`
 				@media ${label === 'desktop' ? 'print, screen and' : ''} print, screen and (min-width: ${sizes[label] / 16}em) {
 					${css(...args)}
@@ -18,5 +19,11 @@ const mediaQueries =
 			`;
 			return acc
 		}, {});
+
+mediaQueries.print = (...args) => css`
+	@media print {
+	  ${css(...args)}
+	}
+`;
 
 export default mediaQueries;

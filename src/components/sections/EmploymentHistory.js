@@ -7,7 +7,7 @@ import MainSection from '../template/MainSection';
 
 const EmploymentSd = styled.div`
     :not(:last-child) {
-        margin-bottom: 5rem;
+        margin-bottom: ${props => props.theme.spaces.screen.item};
     }
 `;
 

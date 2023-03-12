@@ -3,13 +3,12 @@ import styled from 'styled-components';
 import locIcon from '../img/location.png';
 
 export const Heading1 = styled.h1`
-    margin: 0px;
+    margin: 0;
     font-size: ${props => props.theme.sizes.heading1};
     font-weight: 500;
 `;
 
 export const Heading2 = styled.h2`
-    padding-bottom: 1rem;
     margin-bottom: 2rem;
     color: ${props => props.theme.colors.heading2};
     font-size: ${props => props.theme.sizes.heading2};
