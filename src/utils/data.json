@@ -9,19 +9,17 @@
         "address": "Athens, Greece"
     },
     "links": [
-        {"label": "LinkedIn", "link":"https://www.linkedin.com/in/thanos-tourikas-64650a62"},
         {"label": "GitHub", "link": "https://github.com/thanostourik"},
+        {"label": "LinkedIn", "link":"https://www.linkedin.com/in/thanos-tourikas-64650a62"},
         {"label": "thanostourikas.gr", "link": "https://thanostourikas.gr"}
     ],
     "skills": [
-        "Java, Scala",
+        "Java, Scala, JavaScript",
         "Spring ecosystem (Boot, IoC, Security, Data)",
-        "HTML5, CSS3, JavaScript",
-        "ReactJS, Redux",
-        "Hibernate",
-        "Wicket",
+        "ReactJs, Next.js, Storybook, styled-components, Redux",
         "PostgreSQL, ArangoDB",
-        "Tomcat, Nginx",
+        "Hibernate, Wicket, Akka",
+        "Nginx, Tomcat",
         "Maven, Npm, Webpack",
         "Version control (Git, SVN)",
         "Intellij, Eclipse",
@@ -50,10 +48,10 @@
             "end": "Present",
             "location": "Athens",
             "responsibilities": [
-                "Developing REST backends with Java 8 and Spring Boot",
-                "Creating single page applications with ReactJS",
                 "Lead developer in travel/experiences related project",
-                "Maintaining and developing new features in older products using various technologies",
+                "Developing REST backends with Java 8/11, Spring Boot, Postgresql and ArangoDB",
+                "Creating single page applications with ReactJS (Create React App, React Router v6, Storybook v6)",
+                "Maintaining and developing new features in older products using various technologies (ReactJS, React Native, JSP, C#)",
                 "Coaching junior developers"
             ]
         },
