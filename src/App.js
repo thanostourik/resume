@@ -1,4 +1,5 @@
 import React from 'react';
+import Globals from './utils/globals';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { Heading1 } from './components/General';
 import Resume from './components/template/Resume';
@@ -13,6 +14,7 @@ import Interests from './components/sections/Interests';
 import Profile from './components/sections/Profile';
 import EmploymentHistory from './components/sections/EmploymentHistory';
 import Educations from './components/sections/Educations';
+import Projects from './components/sections/Projects';
 import Courses from './components/sections/Courses';
 
 import theme from './theme';
@@ -47,16 +49,17 @@ function App() {
 				</Header>
 				<LeftColumn>
 					{ data.info && <Info {...data.info} /> }
-					{ data.links && <Links links={data.links} /> }
-					{ data.skills && <Skills skills={data.skills}/> }
-					{ data.languages && <Languages languages={data.languages} /> }
-					{ data.interests && <Interests interests={data.interests} /> }
+					{ data.links && <Links data={data.links} /> }
+					{ data.skills && <Skills data={data.skills}/> }
+					{ data.languages && <Languages data={data.languages} /> }
+					{ data.interests && <Interests data={data.interests} /> }
 				</LeftColumn>
 				<RightColumn>
 					{ data.profile && <Profile profile={data.profile} /> }
-					{ data.employmentHistory && <EmploymentHistory employmentHistory={data.employmentHistory} /> }
-					{ data.education && <Educations education={data.education} /> }
-					{ data.courses && <Courses courses={data.courses} /> }
+					{ data.employmentHistory && <EmploymentHistory data={data.employmentHistory} /> }
+					{ data.education && <Educations data={data.education} /> }
+					{ data.courses && !Globals.HideProjects && <Projects data={data.projects} /> }
+					{ data.courses && !Globals.HideCourses && <Courses data={data.courses} /> }
 				</RightColumn>
 			</Resume>
 		</ThemeProvider>

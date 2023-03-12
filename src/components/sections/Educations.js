@@ -44,11 +44,11 @@ const Education = ({ institution, degree, start, end, location, description }) =
     )
 };
 
-const Educations = ({ education }) => (
+const Educations = ({ data }) => (
     <MainSection>
         <Heading2>{Vars.education}</Heading2>
         {
-            education.map((edu, index) => (
+	        data.map((edu, index) => (
                 <Education key={index} {...edu} />
             ))
         }
@@ -64,7 +64,7 @@ Education.propTypes = {
     description: PropTypes.string
 };
 Educations.propTypes = {
-    education: PropTypes.array.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Educations;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import mediaQueries from '../../utils/mediaQueries';
+import styled from 'styled-components';
 
 const ResumeSd = styled.div`
     padding: 4rem 5rem;
@@ -26,7 +26,6 @@ const ResumeSd = styled.div`
 `;
 
 const Resume = ({ children }) => {
-	console.log(mediaQueries)
 	return (
 		<ResumeSd>
 			{children}

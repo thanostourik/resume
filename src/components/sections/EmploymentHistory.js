@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Vars from '../../utils/vars';
-import { Heading2, Heading3, List, ListItem, LocationIcon } from '../General';
 import MainSection from '../template/MainSection';
+import { Heading2, Heading3, List, ListItem, LocationIcon } from '../General';
+import styled from 'styled-components';
 
 const EmploymentSd = styled.div`
     :not(:last-child) {
@@ -33,7 +33,6 @@ const Employment = ({ jobTitle, employer, start, end, location, responsibilities
                 responsibilities &&
                 <List>
                     {
-                        
                         responsibilities.map((resp, index) => (
                             <ListItem key={index}>{resp}</ListItem>
                         ))
@@ -44,11 +43,11 @@ const Employment = ({ jobTitle, employer, start, end, location, responsibilities
     )
 };
 
-const EmploymentHistory = ({ employmentHistory }) => (
+const EmploymentHistory = ({ data }) => (
     <MainSection>
         <Heading2>{Vars.employmentHistory}</Heading2>
         {
-            employmentHistory.map((employment, index) => (
+	        data.map((employment, index) => (
                 <Employment 
                     key={index} 
                     {...employment} 
@@ -64,10 +63,10 @@ Employment.propTypes = {
     start: PropTypes.string.isRequired,
     end: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    responsibilities: PropTypes.array
+	responsibilities: PropTypes.arrayOf(PropTypes.string),
 };
 EmploymentHistory.propTypes = {
-    employmentHistory: PropTypes.array
+	data: PropTypes.array.isRequired
 };
 
 export default EmploymentHistory;

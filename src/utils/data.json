@@ -20,6 +20,7 @@
         "PostgreSQL, ArangoDB",
         "Hibernate, Wicket, Akka",
         "Nginx, Tomcat",
+        "Docker, Ansible",
         "Maven, Npm, Webpack",
         "Version control (Git, SVN)",
         "Intellij, Eclipse",
@@ -49,10 +50,11 @@
             "location": "Athens",
             "responsibilities": [
                 "Lead developer in travel/experiences related project",
-                "Developing REST backends with Java 8/11, Spring Boot, Postgresql and ArangoDB",
-                "Creating single page applications with ReactJS (Create React App, React Router v6, Storybook v6)",
-                "Maintaining and developing new features in older products using various technologies (ReactJS, React Native, JSP, C#)",
-                "Coaching junior developers"
+                "Analyze requirements and design the system",
+                "Develop a REST backend with Java 8, Spring Boot, Postgresql and ArangoDB",
+                "Create a single page application with ReactJS (Create React App, React Router v6, Storybook v6)",
+                "Maintain and develop new features in older products using various technologies (ReactJS, React Native, JSP, C#)",
+                "Coach junior developers"
             ]
         },
         {
@@ -69,6 +71,19 @@
                 "Took on lead developer position in a car insurance project",
                 "Interacted with the client to understand project details and provide support",
                 "Trained junior developers"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Skippit",
+            "position": "Co-founder, Lead developer",
+            "description": "An online platform to rent a boat/skipper or book a complete sailing experience",
+            "responsibilities": [
+                "Discuss and analyze features with the rest of the team and design the system",
+                "Develop a REST backend with Java 11, Spring Boot, Spring security (JWT, refresh token) and Postgresql",
+                "Create a single page application with ReactJs (Next.js, Storybook v6)",
+                "DevOps tasks, setup the production and staging servers (Ansible, nginx)"
             ]
         }
     ],

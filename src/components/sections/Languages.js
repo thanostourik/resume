@@ -15,7 +15,7 @@ const LevelSd = styled.span`
     font-style: italic;
 `;
 
-const Languages = ({ languages }) => (
+const Languages = ({ data }) => (
     <SidebarSection>
         <Heading2>{Vars.languages}</Heading2>
         <List 
@@ -24,7 +24,7 @@ const Languages = ({ languages }) => (
             listStyle="none"
         >
             {
-                languages.map((lang, index) => (
+	            data.map((lang, index) => (
                     <ListItemSd key={index}>
                         <span>{lang.language}</span>
                         <LevelSd>{lang.level}</LevelSd>
@@ -36,7 +36,7 @@ const Languages = ({ languages }) => (
 );
 
 Languages.propTypes = {
-    languages: PropTypes.array.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Languages;

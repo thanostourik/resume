@@ -6,6 +6,7 @@ const vars = {
     languages: "Languages",
     interests: "Interests",
     employmentHistory: "Employment History",
+	projects: "Projects",
     education: "Education",
     courses: "Courses"
 };

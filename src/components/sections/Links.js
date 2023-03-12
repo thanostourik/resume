@@ -10,7 +10,7 @@ const LinkItem = ({ label, link }) => (
     </ListItem>
 );
 
-const Links = ({ links }) => (
+const Links = ({ data }) => (
     <SidebarSection>
         <Heading2>{Vars.links}</Heading2>
         <List
@@ -19,7 +19,7 @@ const Links = ({ links }) => (
             listStyle="none"
         >
             {
-                links.map((link, index) => (
+	            data.map((link, index) => (
                     <LinkItem
                         key={index}
                         link={link.link}
@@ -36,7 +36,7 @@ LinkItem.propTypes = {
     link: PropTypes.string.isRequired
 };
 Links.propTypes = {
-    links: PropTypes.array.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Links;

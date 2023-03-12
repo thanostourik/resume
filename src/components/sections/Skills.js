@@ -8,7 +8,7 @@ const Skill = ({ skill }) => (
     <ListItem>{skill}</ListItem>
 );
 
-const Skills = ({ skills }) => (
+const Skills = ({ data }) => (
     <SidebarSection>
         <Heading2>{Vars.skills}</Heading2>
         <List
@@ -17,7 +17,7 @@ const Skills = ({ skills }) => (
             listStyle="none"
         >
             {
-                skills.map((skill, index) => (
+	            data.map((skill, index) => (
                     <Skill
                         key={index}
                         skill={skill}
@@ -32,7 +32,7 @@ Skill.propTypes = {
     skill: PropTypes.string.isRequired
 };
 Skills.propTypes = {
-    skills: PropTypes.array.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Skills;

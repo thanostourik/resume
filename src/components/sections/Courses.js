@@ -30,11 +30,11 @@ const Course = ({ course, institution, start, end }) => (
     </CourseSd>
 );
 
-const Courses = ({ courses }) => (
+const Courses = ({ data }) => (
     <MainSection>
         <Heading2>{Vars.courses}</Heading2>
         {
-            courses.map((course, index) => (
+	        data.map((course, index) => (
                 <Course key={index} {...course} />
             ))
         }
@@ -48,7 +48,7 @@ Course.propTypes = {
     end: PropTypes.string
 };
 Courses.propTypes = {
-    courses: PropTypes.array.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Courses;
